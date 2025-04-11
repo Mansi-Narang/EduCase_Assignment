@@ -1,7 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router';
 
 function SignUp() {
     const [isAgency, setIsAgency] = useState(true);
+    const navigate = useNavigate();
+
+    const handleClick = async() => {
+        navigate('/account');
+    }
 
     return (
         <div className="flex flex-col min-h-screen bg-white p-4 max-w-sm mx-auto">
