@@ -104,7 +104,7 @@ function SignUp() {
             </form>
 
             <div className="mt-6">
-                <button className="w-full py-3 bg-purple-600 text-white font-medium rounded-md">
+                <button onClick={handleClick} className="w-full py-3 bg-purple-600 text-white font-medium rounded-md">
                     Create Account
                 </button>
             </div>
